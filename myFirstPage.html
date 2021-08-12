@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Simple Web Page</title>
+    <style>
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      #footer {
+        text-align: center; /* Set the social media icon to the center */
+      }
+      #footer a img {
+        height: 35px; /* Set the social media icons height and width */
+        width: 35px;
+      }
+      body {
+        background-image: url("img/Redwallpaper.jpeg");
+        font-family: sans-serif;
+      }
+      .quote {
+        text-align: center;
+        font-size: 2rem;
+        margin: auto;
+        padding: 10px;
+        border: 2px solid black;
+        max-width: 60%;
+        position: relative;
+        margin-top: 80px;
+      }
+      blockquote {
+        color: white;
+        text-shadow: -1px 1px #555;
+        font-style: italic;
+        position: relative;
+        z-index: 20;
+      }
+      .span-left {
+        position: absolute;
+        top: -50px;
+        left: -20px;
+        text-align: left;
+        z-index: 10;
+        font-size: 5rem;
+        color: #336699;
+        line-height: 200px;
+      }
+      .span-right {
+        position: absolute;
+        bottom: -50px;
+        right: -20px;
+        text-align: right;
+        z-index: 10;
+        font-size: 5rem;
+        color: #336699;
+        line-height: 200px;
+      }
+      small {
+        font-size: 1.5rem;
+        color: #336699;
+        position: relative;
+        z-index: 20;
+      }
+      table {
+        border: 3;
+        border-color: "black";
+      }
+      table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+      p {
+        margin-right: 0.2rem;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+      }
+      #hobbies > ul ul {
+        display: none;
+      }
+      #hobbies > li li {
+        color: white;
+      }
+      #hobbies > ul > li:hover > ul,
+      #hobbies > ul > li > ul > li:hover > ul {
+        display: block;
+      }
+      .sidebar {
+        height: 100%;
+        width: 225px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        overflow-x: hidden;
+        padding-top: 16px;
+      }
+
+      #imgprofile {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .audio-iframe {
+        margin-top: -10px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        border: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div id="hobbies" class="sidebar">
+        <div>
+          <div class="profile">
+            <img id="imgprofile" src="img/khyati.png" alt="profile_picture" />
+            <h3 style="color: #ffffff; text-align: center">Khyati Gupta</h3>
+            <p style="color: white; font-size: 14px">Recruiter</p>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Music
+            <ul>
+              <li>
+                Songs
+                <ul>
+                  <li>
+                    <a
+                      href="https://gaana.com/song/lut-gaye-3"
+                      target="iframe1"
+                      display="block"
+                      onclick="enableiframe() ; return false;"
+                      >Lut Gaye</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://gaana.com/song/taaron-ke-shehar"
+                      target="iframe1"
+                      display="block"
+                      onclick="enableiframe() ; return false;"
+                      >Taron ke shahar main</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Albums
+                <ul>
+                  <li>
+                    <a
+                      href="https://gaana.com/playlist/swatigupta-nazag-sonunigamalbumdeewana"
+                      target="iframe1"
+                      display="block"
+                      onclick="enableiframe() ; return false;"
+                      >Deewana</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://gaana.com/artist/sanam"
+                      target="iframe1"
+                      display="block"
+                      onclick="enableiframe() ; return false;"
+                      >Sanam</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <h1>Welcome to My Web Page in HTML</h1>
+        </div>
+        <div class="quote">
+          <span class="span-left">❝</span>
+          <blockquote>
+            If you cannot do great things, do small things in a great way.
+          </blockquote>
+          <small>Napoleon Hill</small>
+          <span class="span-right">❞</span>
+        </div>
+        <div>
+          <p>***My Favourite Places***</p>
+        </div>
+        <div>
+          <table align="center">
+            <tr width="50%">
+              <td border="3" height="200" width="200">
+                <a
+                  href="https://en.wikipedia.org/wiki/Goa"
+                  title="Goa - A perfect holiday destination"
+                >
+                  <img
+                    style="display: block"
+                    width="100%"
+                    height="100%"
+                    src="img/Goa.png"
+                    alt="Goa"
+                /></a>
+              </td>
+              <td border="3" height="200" width="200">
+                <a
+                  href="https://en.wikipedia.org/wiki/Greec"
+                  title="Greece - All time classic"
+                  ><img
+                    style="display: block"
+                    width="100%"
+                    height="100%"
+                    src="img/greece.png"
+                    alt="Greece - All time classic"
+                /></a>
+              </td>
+              <td border="3" height="200" width="200">
+                <a
+                  href="https://en.wikipedia.org/wiki/Switzerland"
+                  title="Switzerland - Heaven on earth"
+                  ><img
+                    style="display: block"
+                    width="100%"
+                    height="100%"
+                    src="img/switzerland.png"
+                    alt="Switzerlannd"
+                /></a>
+              </td>
+              <td border="3" height="200" width="200">
+                <a
+                  href="https://en.wikipedia.org/wiki/Venice"
+                  title="Venice - The city of canals"
+                  ><img
+                    style="display: block"
+                    width="100%"
+                    height="100%"
+                    src="img/venice.png"
+                    alt="Venice"
+                /></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="diviframe">
+        <iframe
+          class="audio-iframe"
+          name="iframe1"
+          id="iframe1"
+          width="400"
+          height="400"
+          style="border: none"
+          scrolling="yes"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer">
+        <p>&copy; 2021 Khyati Gupta.</p>
+        <a href="http://www.facebook.com/khyati.gupta.108"
+          ><img src="img/FB_logo.png" alt="Facebook Logo"
+        /></a>
+        <a href="http://www.linkedin.com/khyati-gupta-a985153a"
+          ><img src="img/LinkedIn_logo_initials.png" alt="twitter logo"
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("keydown", function (event) {
+      var frame = document.getElementById("iframe1");
+
+      if (event.key === "Escape") {
+        frame.style.display = "none";
+      } else {
+        frame.style.display = "block";
+      }
+      function enableiframe() {
+        console.log("entered");
+        frame.style.display = "block";
+      }
+      /*if (document.activeElement.id === "linkiframe1") {
+          var frame = document.getElementById("iframe1");
+          frame.style.display = "none";
+        }
+        if (document.activeElement.id === "linkiframe2") {
+          var frame = document.getElementById("iframe2");
+          frame.style.display = "none";
+        }*/
+    });
+    /*
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        if (document.activeElement.id === "linkiframe1") {
+          //alert(1);
+          document.getElementsById("iframe1").style.display = "none";
+        }
+        if (document.activeElement.id === "linkiframe2") {
+          //alert(2);
+          document.getElementsById("linkiframe2").style.display = "none";
+        }
+      }
+    });
+    /*document.addEventListener("keydown", function () {
+      var x = event.keyCode || event.which;
+      if (x == 27) {
+        var y = document.getElementById("diviframe");
+        if (y.style.display === "block") {
+          document.getElementById("diviframe").style.display = "none";
+        } else {
+          document.getElementById("diviframe").style.display = "block";
+        }
+      }
+    });
+    function showIframe1() {
+      document.getElementById("diviframe").style.display = "block";
+      document.getElementById("iframe2").style.display = "none";
+      var y = document.getElementById("iframe1");
+      if (y.style.display === "none") {
+        document.getElementById("iframe1").style.display = "block";
+        y.focus();
+      }
+    }*/
+  </script>
+</html>
